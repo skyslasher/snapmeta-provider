@@ -1,7 +1,8 @@
 # Volumio metadata provider for Snapcast
 
 This plugin enables the [Snapcast](https://github.com/badaix/snapcast) server
-to control Volumio and provides the metadata of the current playing song.
+to control [Volumio](https://volumio.com/) and provides the metadata of the
+current playing song.
 
 *Please note that the audio connection to Snapcast is not established by this
 plugin.* You can use e.g. Pulse Audio to bridge the audio stream to the
