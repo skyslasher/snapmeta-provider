@@ -11,7 +11,7 @@ Snapcast to the container running Volumio.
 
 ## Installation
 
-If your Volumio player is not reachable via the hostname volumio.local,
+If your Volumio player is not reachable via the hostname `volumio.local`,
 please substitute its adress in the commands below.
 
 * Enable ssh access on your Volumio instance
@@ -34,12 +34,12 @@ $ volumio plugin install
 
 ### Volumio
 Navigate to *Plugins -> Installed Plugins* and enable the plugin. Then click
-on the *Settings* button.
+on the `Settings` button.
 
-* Host/IP: Leave blank to make the plugin listen on all adresses on
+* `Host/IP`: Leave blank to make the plugin listen on all adresses on
 all interfaces
-* Port: The port number Snapcast will connect to
-* HTTP Base URL: To enable Snapcast to download cover art from volumio, we
+* `Port`: The port number Snapcast will connect to
+* `HTTP Base URL`: To enable Snapcast to download cover art from volumio, we
 need the first part of the URL to reach your Volumio instance, e.g.
 `http://volumio.local`
 
