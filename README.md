@@ -15,13 +15,13 @@ Snapcast to the container running Volumio.
 If your Volumio player is not reachable via the hostname `volumio.local`,
 please substitute its adress in the commands below.
 
-* Enable ssh access on your Volumio instance
+* Enable ssh access on your Volumio instance:
 Point your Browser to
 ```plain_text
  http://volumio.local/dev
  ```
 Go to the section *SSH* and click the `ENABLE` button
-* ssh into your Volumio instance
+* ssh into your Volumio instance:
 ```plain_text
 $ ssh volumio@volumio.local
  ```
