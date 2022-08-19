@@ -1,0 +1,55 @@
+{
+    "page": {
+        "label": "Snapcast Metadata Provider configuration"
+    },
+    "sections": [
+        {
+            "id": "section_network",
+            "element": "section",
+            "label": "Network settings",
+            "icon": "fa-server",
+            "onSave": {
+                "type":"controller",
+                "endpoint":"user_interface/snapmeta-provider",
+                "method":"saveNetworkSettings"
+            },
+            "saveButton": {
+                "label": "Save",
+                "data": [
+                    "serverHost",
+                    "serverPort",
+                    "baseURL"
+                ]
+            },
+            "content": [
+                {
+                    "id": "serverHost",
+                    "type": "text",
+                    "element": "input",
+                    "description": "Hostname or IP adress to listen for Snapcast server connections (e.g. 0.0.0.0)",
+                    "label": "Host/IP",
+                    "value": "",
+                    "options": []
+                },
+                {
+                    "id": "serverPort",
+                    "type": "text",
+                    "element": "input",
+                    "description": "Port number (1025-65535) to listen for Snapcast server conncetions",
+                    "label": "Port",
+                    "value": "",
+                    "options": []
+                },
+                {
+                    "id": "baseURL",
+                    "type": "text",
+                    "element": "input",
+                    "description": "HTTP base URL (Hostname or IP adress) visible to the Snapcast server, to fetch album art (e.g. http://volumio.local or http://192.168.1.200)",
+                    "label": "HTTP base URL",
+                    "value": "",
+                    "options": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+	"name": "snapmeta-provider",
+	"version": "1.0.0",
+	"description": "Provide metadata, status and a command interface to snapcast",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Andreas Hahn",
+	"license": "ISC",
+	"repository": "https://github.com/skyslasher/snapmeta-provider",
+	"volumio_info": {
+		"prettyName": "Snapmeta-provider",
+		"icon": "fa-arrows-h",
+		"plugin_type": "user_interface",
+		"architectures": [
+			"amd64",
+			"armhf",
+			"i386"
+		],
+		"os": [
+			"buster"
+		],
+		"details": "On the snapcast side, adopt the script \"snapserver/etc/plugins/volumioctl.sh\" and use it as the stream control script",
+		"changelog": "Initial release"
+	},
+	"engines": {
+		"node": ">=14.20.0 <15.0.0",
+		"volumio": ">=3.324.0 <4.0.0"
+	},
+	"dependencies": {
+		"fs-extra": "^0.28.0",
+		"jsonrpc-serializer": "^0.2.1",
+		"kew": "^0.7.0",
+		"net": "^1.0.2",
+		"socket.io-client": "^2.5.0",
+		"v-conf": "^1.4.0"
+	}
+}

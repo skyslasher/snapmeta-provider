@@ -1,0 +1,14 @@
+{
+  "serverHost": {
+      "type": "string",
+      "value": "0.0.0.0"
+  },
+  "serverPort": {
+      "type": "string",
+      "value": "42421"
+  }
+  "baseURL": {
+      "type": "string",
+      "value": "http://192.168.1.111"
+  }
+}
